@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KoreAPart</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+    
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="/static/js/demo/data.js"></script>
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis - v1.3.0
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+    
+<script>
+	$(function () {	//화면 로딩후 시작
+		$("#searchInput").autocomplete({  //오토 컴플릿트 시작
+			source: List,	// source는 data.js파일 내부의 List 배열
+			focus : function(event, ui) { // 방향키로 자동완성단어 선택 가능하게 만들어줌	
+				return false;
+			},
+			minLength: 1,// 최소 글자수
+			delay: 100,	//autocomplete 딜레이 시간(ms)
+			//disabled: true, //자동완성 기능 끄기
+		});
+	});
+</script>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="static/img/logo.png" alt=""> -->
+        <h1>KoreAPart</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="/service">Q&amp;A</a></li>
+              <li><a href="/model">AI 모델 보기</a></li>
+              <li><a href="/DSR">DSR 계산하기</a></li>
+              <li><a href="http://reitskorea.co.kr/">Reits 정보 확인하기</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact">Buy Apart</a></li>
+          <li><a class="get-a-quote" href="/quote">직접 계산해보기</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">내 집 마련,</h2>
+          <h2 data-aos="fade-up">얼마나 걸릴까? </h2>
+            
+            <h4 data-aos="fade-up">내 월급으로 서울 아파트 한 채 사려면 과연 몇 년이 걸릴까?</h4>
+            <h4 data-aos="fade-up">KoreAPart와 함께 꿈만 같은 내집마련에 한 걸음 다가가보세요 !</h4>
+            <p>
+                
+            </p>
+            
+          <form action="/contactAPT" method="POST" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+            <input id="searchInput" name="aptname" type="text" class="form-control" placeholder="아파트 주소 입력">
+            <button type="submit" class="btn btn-primary">Search PIR</button>
+          </form>
+            
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="82.1" data-purecounter-duration="1" class="purecounter"></span>
+                <p>소비자<br>심리지수</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span>강남</span>
+                <p>가장 많이<br>검색한 지역</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="34" data-purecounter-duration="1" class="purecounter"></span>
+                <p>최고 매매<br>가격(억)</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                <p>방문자수</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="static/img/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="" >
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Pricing Section ======= -->
+      <!-- 하얀 공백 추가  -->
+    <section id="pricing" class="pricing pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <!-- <div class="section-header">
+          <span>  </span>
+          <h2>  </h2>
+
+        </div> -->
+          
+      <p>
+          
+          </p>
+
+      </div>
+    </section><!-- End Pricing Section -->
+      
+      
+     
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="slides-1 swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/static/img/minji.jpeg" class="testimonial-img" alt="">
+                <h3>김민지</h3>
+                <h4>Reader &amp; Developer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  팀원들과 함께 이번 DT 프로젝트를 진행하면서, 부동산 시장에 대해 이해할 수 있었고 <br>평소에 
+                  자주 해보지 못했던 FrontEnd, BackEnd 를 모두 개발해보면서 실력향상을 할 수 있었던 좋은 시간을 보냈습니다! 
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/static/img/young.png" class="testimonial-img" alt="">
+                <h3>김용욱</h3>
+                <h4>Data Scientist</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  민지가 최고야 민지가 짱이야 민지가 왕이야!
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+              
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/static/img/hj.jpg" class="testimonial-img" alt="">
+                <h3>송현진</h3>
+                <h4>Data Scientist &amp; Idea Bank </h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  간접적으로 머신러닝, 코딩을 접하며 개발의 영역이 무궁무진함을 느끼게 되었습니다. <br>민지 개발자님께 감사드립니다!
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/static/img/kang.jpg" class="testimonial-img" alt="">
+                <h3>강병우</h3>
+                <h4>Data Scientist</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  너무나 어렵고 막막했는데, 조장님이 큰 역할을 해주어 프로젝트를 진행할 수 있었습니다. <br>머신러닝의 구현과정을 체험해볼 수 있어 개인적으로도 유익했습니다.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item --> 
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/static/img/Oh.jpg" class="testimonial-img" alt="">
+                <h3>오해솔</h3>
+                <h4>無</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  조장님이 이끌어주신 덕분에 파이썬 프로젝트를 무사히 마칠 수 있었습니다. <br>AI 역량을 키우는 것이 중요하다는 것을 다시금 알 수 있었습니다. 감사합니다.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item --> 
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+      
+    <p>
+       <br><br><br>
+    </p>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>KoreAPart</span>
+          </a>
+            <br>
+            <p>내 연봉으로 내가 원하는 집을 언제 살 수 있을까? 
+            <br> KoreAPart를 통해 내가 원하는 서을 아파트 구매 정보를 한 눈에 확인하고,
+            <br>내 집 마련 하는 그날까지 KoreAPart와 함께해요 ! </p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/p/Cn3xdX3PUEY/?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-4 footer-links">
+          <h4> </h4>
+          <ul>
+            <!-- <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-8 footer-links">
+          <h4>Contact Us</h4>
+          <ul>
+          <p>
+            서울특별시 영등포구 의사당대로<br>
+            88, 한국투자증권 본사<br>
+            자양 연구실 <br><br>
+          </p>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4> </h4>
+          <ul>
+          <p>
+            <br>
+            <strong>Phone:</strong> 02-3276-5000<br>
+            <strong>Email:</strong> DongGi-Salang@naver.com<br>
+          </p>
+            </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">MinZi.KIM</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>

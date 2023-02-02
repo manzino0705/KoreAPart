@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KoreAPart</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/main.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Logis - v1.3.0
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="static/img/logo.png" alt=""> -->
+        <h1>KoreAPart</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="/service">Q&amp;A</a></li>
+              <li><a href="/model">AI 모델 보기</a></li>
+              <li><a href="/DSR">DSR 계산하기</a></li>
+              <li><a href="http://reitskorea.co.kr/">Reits 정보 확인하기</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact">Buy Apart</a></li>
+          <li><a class="get-a-quote" href="/quote">직접 계산해보기</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('static/img/page-header.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>DSR Calculator</h2>
+                <p>DSR은 나의 연간 소득에서 갚아야하는 부채가 차지하는 비율입니다. </p>
+                <p>DSR 값이 40%를 초과하면 추가 대출이 어렵습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>DSR Calculator</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+        
+    
+        
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>주택 담보 대출 DSR 계산 결과</h3>
+              <h4><sup></sup>{{ dsr.dsr }}<span> %</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> 연소득 : {{ user.income }} </li>
+                <li><i class="bi bi-check"></i> 대출 종류 : 주택 담보 대출, 금리 5.4% </li>
+                <li><i class="bi bi-check"></i> 대출 필요 금액 : {{ apt_loan }} </li>
+                <li><i class="bi bi-check"></i> 금리 : 5.4 % </li>
+                <li><i class="bi bi-check"></i> 대출 약정 기간  : 360개월(30년)</li>
+                <li><i class="bi bi-check"></i> 상환 방식  : 원리금 균등 분할 상환 </li>
+              </ul>
+              <a href="#" class="buy-btn"> {{comm}} </a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3>대출 이자 계산기</h3>          
+              <ul>
+                  <li>매월 얼마씩 갚아야 하지?<br>
+                      대출 기간 총 비용을 계산해 드립니다.</li>
+              </ul>
+              <form action="/DSR1" id="dsr" method="POST" >
+                 
+                <div class="col-md-9">
+                  <input type="text" name="loan_income" class="form-control" placeholder="연소득(만원)" required>
+                </div><br>
+              
+                <div class="col-md-9">
+                  <input type="text" name="loan_price" class="form-control" placeholder="대출금액(만원)" required>
+                </div>
+                <br>
+                <div class="col-md-9">
+                  <input type="text" name="loan_rate" class="form-control" placeholder="연이자율(%)" required>
+                </div>
+                <br>
+                <div class="col-md-9">
+                  <input type="text" name="loan_period" class="form-control" placeholder="상환기간(개월)" required>
+                </div>
+                <br>
+                
+                <input type="submit" class="btn buy-btn" name="loan" value="계산하기" />
+            </form>
+                
+            </div>
+          </div><!-- End Pricing Item -->
+            
+          
+            
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-item featured">
+              <h3>계산 결과</h3>         
+              <ul>
+                  <li><span style="color:#0033CC"><b>{{ loan.price }}</b></span>&nbsp;만원을 &nbsp;<span style="color:#0033CC" strong><b>{{loan.period}}</b></span>&nbsp;개월 동안</li>
+                  <li>원리금 균등 상환으로 대출을 받았을 때, </li>
+                  <li><span style="color:#0033CC"><b>{{loan.rate}}</b></span>&nbsp;% 기준 매월&nbsp; <span style="color:red"><b> {{loan_month}}</b></span>&nbsp;만원씩 갚아야 합니다</li>
+              </ul>
+                
+              <table class="table table-hover">
+                  <caption>단위 : 만원</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">회차</th>
+                      <th scope="col">이자</th>
+                      <th scope="col">원금</th>
+                      <th scope="col">내야하는 금액</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>{{loan_table[0][0]}}</td>
+                      <td>{{loan_table[0][1]}}</td>
+                      <td text-align="right">{{loan_month}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>{{loan_table[1][0]}}</td>
+                      <td>{{loan_table[1][1]}}</td>
+                      <td text-align="right">{{loan_month}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">{{loan_len-3}}</th>
+                      <td>{{loan_table[-3][0]}}</td>
+                      <td>{{loan_table[-3][1]}}</td>
+                      <td text-align="right">{{loan_month}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">{{loan_len}}</th>
+                      <td>{{loan_table[-1][0]}}</td>
+                      <td>{{loan_table[-1][1]}}</td>
+                      <td text-align="right">{{loan_month}}</td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+
+  </main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>KoreAPart</span>
+          </a>
+            <br>
+            <p>내 연봉으로 내가 원하는 집을 언제 살 수 있을까? 
+            <br> KoreAPart를 통해 내가 원하는 서을 아파트 구매 정보를 한 눈에 확인하고,
+            <br>내 집 마련 하는 그날까지 KoreAPart와 함께해요 ! </p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/p/Cn3xdX3PUEY/?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-4 footer-links">
+          <h4> </h4>
+          <ul>
+            <!-- <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-8 footer-links">
+          <h4>Contact Us</h4>
+          <ul>
+          <p>
+            서울특별시 영등포구 의사당대로<br>
+            88, 한국투자증권 본사<br>
+            자양 연구실 <br><br>
+          </p>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4> </h4>
+          <ul>
+          <p><br>
+            <strong>Phone:</strong> 02-3276-5000<br>
+            <strong>Email:</strong> DongGi-Salang@naver.com<br>
+          </p>
+            </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">MinZi.KIM</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+
+</body>
+
+</html>

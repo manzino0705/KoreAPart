@@ -1,0 +1,1036 @@
+{'year_real_return': '1,371,996', 'year_interest_return': '5,366,373', 'year_total': '6,738,370', 'dsr': '11.23'}
+ * Serving Flask app "application" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 307-409-220
+172.17.0.1 - - [01/Feb/2023 18:38:19] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 18:38:19] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+172.17.0.1 - - [01/Feb/2023 18:43:01] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 18:45:17] "[37mPOST /contactAPT HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 18:47:22] "[37mGET /model HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 18:48:14] "[37mGET /quote HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 18:49:09] "[37mPOST /contact HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 18:50:37] "[37mGET /DSR HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 18:51:34] "[37mPOST /DSR2 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 18:51:45] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 18:54:50] "[37mGET /service HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 18:54:51] "[37mGET /static/img/youtube.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 18:55:08] "[37mGET /service HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:55] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:56] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:56] "[37mGET /static/js/demo/data.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:56] "[37mGET /static/vendor/aos/aos.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:56] "[37mGET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:56] "[37mGET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:56] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:56] "[36mGET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+172.17.0.1 - - [01/Feb/2023 23:15:56] "[36mGET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+172.17.0.1 - - [01/Feb/2023 23:15:56] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:57] "[37mGET /static/img/minji.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:57] "[37mGET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:57] "[37mGET /static/img/young.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:57] "[37mGET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:57] "[37mGET /static/img/hj.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:57] "[37mGET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:57] "[37mGET /static/img/hero-bg.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:57] "[37mGET /static/img/kang.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:57] "[37mGET /static/img/Oh.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:15:57] "[37mGET /static/img/testimonials-bg.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:16:08] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:16:44] "[35m[1mPOST /contactAPT HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/workspace/Fin_AI_project/application.py", line 121, in contactAPT
+    apt_pir_data, avg_pir_data, apt_price = cal_apt_pir( apt_addr )
+  File "/workspace/Fin_AI_project/cal_pir.py", line 40, in cal_apt_pir
+    return apt_list, avg_pir , apt_price_result
+UnboundLocalError: local variable 'apt_price_result' referenced before assignment
+172.17.0.1 - - [01/Feb/2023 23:16:45] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:16:45] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:16:45] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:16:45] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:16:45] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:16:45] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:18:06] "[37mPOST /contactAPT HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:18:06] "[37mGET /static/vendor/chart.js/Chart.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:18:06] "[37mGET /static/img/page-header.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:18:06] "[37mGET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:18:28] "[37mGET /quote HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:18:29] "[37mGET /static/img/user.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:20:33] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:39:32] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:48:05] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:48:06] "[37mGET /static/js/demo/data.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:48:06] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:48:06] "[37mGET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:48:06] "[37mGET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:48:06] "[37mGET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:48:06] "[37mGET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:48:06] "[37mGET /static/vendor/aos/aos.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:48:06] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [01/Feb/2023 23:48:11] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 00:01:57] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 00:05:19] "[37mGET /quote HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 00:05:23] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 00:23:51] "[37mGET /service HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 00:23:51] "[37mGET /static/img/youtube.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 00:23:57] "[37mGET /service HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 00:24:37] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 00:59:04] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:04:12] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:05:05] "[37mPOST /contactAPT HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:06:18] "[37mGET /model HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:06:19] "[37mGET /static/img/team/model1.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:06:19] "[37mGET /static/img/team/model2.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:06:19] "[37mGET /static/img/team/model3.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:07:08] "[37mGET /quote HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:08:16] "[37mPOST /contact HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:08:55] "[37mPOST /contact HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:09:56] "[37mGET /DSR HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:10:58] "[37mPOST /DSR2 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:11:13] "[37mGET /service HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 01:11:27] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:20] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:21] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:21] "[37mGET /static/js/demo/data.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:21] "[37mGET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:21] "[37mGET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:21] "[37mGET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:21] "[37mGET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:21] "[37mGET /static/vendor/aos/aos.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:21] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:22] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:22] "[37mGET /static/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:22] "[37mGET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:22] "[37mGET /static/vendor/aos/aos.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:22] "[37mGET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:22] "[37mGET /static/vendor/php-email-form/validate.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:22] "[37mGET /static/img/minji.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:22] "[37mGET /static/img/hero-img.svg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:22] "[37mGET /static/js/main.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:22] "[37mGET /static/img/young.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:22] "[37mGET /static/img/hj.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:23] "[37mGET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:23] "[37mGET /static/img/hero-bg.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:23] "[37mGET /static/img/kang.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:23] "[37mGET /static/img/testimonials-bg.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:23] "[37mGET /static/img/Oh.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:34:37] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:04] "[37mHEAD / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:04] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:05] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:05] "[37mGET /static/img/favicon.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.17.0.1 - - [02/Feb/2023 02:37:06] "[37mGET /static/img/young.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:06] "[37mGET /static/img/hero-img.svg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:06] "[37mGET /static/img/Oh.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:06] "[37mGET /static/img/minji.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:06] "[37mGET /static/img/kang.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:06] "[37mGET /static/img/hj.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:07] "[37mGET /static/img/Oh.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:07] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:08] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:08] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:08] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:08] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/js/demo/data.js HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/js/demo/data.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/vendor/aos/aos.css HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/css/main.css HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/vendor/aos/aos.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:09] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/img/minji.jpeg HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/vendor/aos/aos.js HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/vendor/php-email-form/validate.js HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/img/hero-img.svg HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/js/main.js HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/img/minji.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/vendor/aos/aos.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:10] "[37mGET /static/vendor/php-email-form/validate.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/testimonials-bg.jpg HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/young.png HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/Oh.jpg HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/hero-img.svg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/kang.jpg HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/hj.jpg HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/js/main.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/hero-bg.png HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/testimonials-bg.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/young.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/Oh.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/hj.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 206 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/kang.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/img/hero-bg.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:37:11] "[37mGET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:16] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:16] "[37mGET /static/js/demo/data.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:16] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:16] "[37mGET /static/vendor/aos/aos.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:16] "[37mGET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:16] "[37mGET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:16] "[37mGET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:16] "[37mGET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:16] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/vendor/aos/aos.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/vendor/php-email-form/validate.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/img/hero-img.svg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/js/main.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/img/minji.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/img/hero-bg.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/img/young.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/img/hj.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/img/kang.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/img/testimonials-bg.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/img/Oh.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:17] "[37mGET /static/img/favicon.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:25] "[37mPOST /contactAPT HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:26] "[37mGET /static/vendor/chart.js/Chart.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:26] "[37mGET /static/img/page-header.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:26] "[37mGET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:36] "[37mGET /service HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:36] "[37mGET /static/img/youtube.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:37] "[37mGET /model HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:37] "[37mGET /static/img/team/model1.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:37] "[37mGET /static/img/team/model2.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:38:37] "[37mGET /static/img/team/model3.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:06] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:07] "[37mHEAD / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:12] "[37mPOST /contactAPT HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:16] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:34] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/workspace/Fin_AI_project/application.py", line 49, in contact
+    user['name'] = request.form['name']
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'name'
+172.17.0.1 - - [02/Feb/2023 02:39:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:39] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/workspace/Fin_AI_project/application.py", line 49, in contact
+    user['name'] = request.form['name']
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'name'
+172.17.0.1 - - [02/Feb/2023 02:39:39] "[37mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:39] "[37mGET /contact?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:39] "[37mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:39] "[37mGET /contact?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:39] "[37mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:45] "[37mGET /quote HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:46] "[37mGET /static/js/demo/data2.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:39:46] "[37mGET /static/img/user.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:40:16] "[37mGET /quote HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:40:53] "[35m[1mPOST /contact HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/workspace/Fin_AI_project/application.py", line 72, in contact
+    apt_pir_data, avg_pir_data, apt_price = cal_apt_pir( apt['apt_city'] + " " + apt['apt_addr'] , float(apt['apt_size']))
+  File "/workspace/Fin_AI_project/cal_pir.py", line 40, in cal_apt_pir
+    return apt_list, avg_pir , apt_price_result
+UnboundLocalError: local variable 'apt_price_result' referenced before assignment
+172.17.0.1 - - [02/Feb/2023 02:40:54] "[37mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:40:54] "[37mGET /contact?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:40:54] "[37mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:40:54] "[37mGET /contact?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:40:54] "[37mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:40:59] "[35m[1mPOST /contact HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/workspace/Fin_AI_project/application.py", line 72, in contact
+    apt_pir_data, avg_pir_data, apt_price = cal_apt_pir( apt['apt_city'] + " " + apt['apt_addr'] , float(apt['apt_size']))
+  File "/workspace/Fin_AI_project/cal_pir.py", line 40, in cal_apt_pir
+    return apt_list, avg_pir , apt_price_result
+UnboundLocalError: local variable 'apt_price_result' referenced before assignment
+172.17.0.1 - - [02/Feb/2023 02:40:59] "[37mGET /contact?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:40:59] "[37mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:40:59] "[37mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:40:59] "[37mGET /contact?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:40:59] "[37mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:41:19] "[35m[1mPOST /contact HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/workspace/Fin_AI_project/application.py", line 72, in contact
+    apt_pir_data, avg_pir_data, apt_price = cal_apt_pir( apt['apt_city'] + " " + apt['apt_addr'] , float(apt['apt_size']))
+  File "/workspace/Fin_AI_project/cal_pir.py", line 40, in cal_apt_pir
+    return apt_list, avg_pir , apt_price_result
+UnboundLocalError: local variable 'apt_price_result' referenced before assignment
+172.17.0.1 - - [02/Feb/2023 02:41:20] "[37mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:41:20] "[37mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:41:20] "[37mGET /contact?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:41:20] "[37mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:41:20] "[37mGET /contact?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:41:30] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/workspace/Fin_AI_project/application.py", line 49, in contact
+    user['name'] = request.form['name']
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'name'
+172.17.0.1 - - [02/Feb/2023 02:41:30] "[37mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:41:30] "[37mGET /contact?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:41:31] "[37mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:41:31] "[37mGET /contact?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 02:41:31] "[37mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:13:57] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:14] "[37mPOST /contactAPT HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:14] "[37mGET /static/vendor/chart.js/Chart.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:14] "[37mGET /static/img/page-header.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:14] "[37mGET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:22] "[37mGET /DSR HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:28] "[37mGET /model HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:28] "[37mGET /static/img/team/model1.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:28] "[37mGET /static/img/team/model2.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:28] "[37mGET /static/img/team/model3.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:33] "[37mGET /model HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:38] "[37mGET /quote HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:38] "[37mGET /static/js/demo/data2.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:14:38] "[37mGET /static/img/user.jpeg HTTP/1.1[0m" 200 -
+{'year_real_return': '1,371,996', 'year_interest_return': '5,366,373', 'year_total': '6,738,370', 'dsr': '11.23'}
+아파트이름: 서울특별시 강남구 개포로 307 논현동한화꿈에그린
+104.43
+[['201604', 20.8], ['201604', 20.07], ['201605', 21.24], ['201607', 23.12], ['201611', 24.34], ['201702', 23.12], ['201704', 23.55], ['201705', 23.44], ['201705', 23.76], ['201705', 23.55], ['201705', 24.64], ['201707', 25.69], ['201707', 25.69], ['201807', 33.83], ['201808', 35.95], ['201808', 34.89], ['201906', 32.59], ['201908', 36.11], ['201909', 36.11], ['201911', 37.78], ['201911', 38.81], ['202007', 39.08], ['202009', 41.97], ['202011', 43.57], ['202012', 43.97], ['202101', 42.07], ['202101', 42.07], ['202101', 42.07], ['202101', 27.73], ['202102', 27.73], ['202104', 43.03], ['202107', 46.85], ['202107', 47.71]]
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2018 2018
+32.42
+2018 2018
+32.42
+2018 2018
+32.42
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2020 2020
+36.77
+2020 2020
+36.77
+2020 2020
+36.77
+2020 2020
+36.77
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+   성별  나이  학력코드  취업  직업코드    소득구간코드
+0   1  27     6   1     3  60000000
+[26833520.]
+서울특별시 강남구 언주로63길 30 갤러리아트
+서울특별시 강남구 광평로47길 17 신동아
+서울특별시 강남구 학동로68길 29 삼성동힐스테이트 1단지
+아파트이름: ehdtlaskrwl@naver.com
+아파트이름: 서울특별시 강남구 언주로 110 래미안대치팰리스
+91.91
+[['201601', 21.9], ['201605', 25.0], ['201606', 24.34], ['201606', 25.66], ['201702', 25.8], ['201705', 27.83], ['202103', 43.99]]
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2017 2017
+27.28
+2017 2017
+27.28
+2021 2021
+39.64
+아파트이름: 서울특별시 강남구 개포로 307 논현동한화꿈에그린
+104.43
+[['201604', 20.8], ['201604', 20.07], ['201605', 21.24], ['201607', 23.12], ['201611', 24.34], ['201702', 23.12], ['201704', 23.55], ['201705', 23.44], ['201705', 23.76], ['201705', 23.55], ['201705', 24.64], ['201707', 25.69], ['201707', 25.69], ['201807', 33.83], ['201808', 35.95], ['201808', 34.89], ['201906', 32.59], ['201908', 36.11], ['201909', 36.11], ['201911', 37.78], ['201911', 38.81], ['202007', 39.08], ['202009', 41.97], ['202011', 43.57], ['202012', 43.97], ['202101', 42.07], ['202101', 42.07], ['202101', 42.07], ['202101', 27.73], ['202102', 27.73], ['202104', 43.03], ['202107', 46.85], ['202107', 47.71]]
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2018 2018
+32.42
+2018 2018
+32.42
+2018 2018
+32.42
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2020 2020
+36.77
+2020 2020
+36.77
+2020 2020
+36.77
+2020 2020
+36.77
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+   성별  나이  학력코드  취업  직업코드     소득구간코드
+0   1  27     6   1     4  600000000
+[26833520.]
+서울특별시 강남구 압구정로29길 71 현대2차(10,11,20,23,24,25동)
+서울특별시 강남구 압구정로79길 88 PH129
+서울특별시 강남구 압구정로79길 88 PH129
+   성별  나이  학력코드  취업  직업코드    소득구간코드
+0   1  27     6   1     4  60000000
+[26833520.]
+서울특별시 강남구 언주로63길 30 갤러리아트
+서울특별시 강남구 광평로47길 17 신동아
+서울특별시 강남구 학동로68길 29 삼성동힐스테이트 1단지
+아파트이름: 서울특별시 강남구 개포로 307 논현동프라임
+104.43
+[['201604', 20.8], ['201604', 20.07], ['201605', 21.24], ['201607', 23.12], ['201611', 24.34], ['201702', 23.12], ['201704', 23.55], ['201705', 23.44], ['201705', 23.76], ['201705', 23.55], ['201705', 24.64], ['201707', 25.69], ['201707', 25.69], ['201807', 33.83], ['201808', 35.95], ['201808', 34.89], ['201906', 32.59], ['201908', 36.11], ['201909', 36.11], ['201911', 37.78], ['201911', 38.81], ['202007', 39.08], ['202009', 41.97], ['202011', 43.57], ['202012', 43.97], ['202101', 42.07], ['202101', 42.07], ['202101', 42.07], ['202101', 27.73], ['202102', 27.73], ['202104', 43.03], ['202107', 46.85], ['202107', 47.71]]
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2018 2018
+32.42
+2018 2018
+32.42
+2018 2018
+32.42
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2020 2020
+36.77
+2020 2020
+36.77
+2020 2020
+36.77
+2020 2020
+36.77
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+아파트이름: 서울특별시 강남구 개포로 307 논현동한화꿈에그린
+104.43
+[['201604', 20.8], ['201604', 20.07], ['201605', 21.24], ['201607', 23.12], ['201611', 24.34], ['201702', 23.12], ['201704', 23.55], ['201705', 23.44], ['201705', 23.76], ['201705', 23.55], ['201705', 24.64], ['201707', 25.69], ['201707', 25.69], ['201807', 33.83], ['201808', 35.95], ['201808', 34.89], ['201906', 32.59], ['201908', 36.11], ['201909', 36.11], ['201911', 37.78], ['201911', 38.81], ['202007', 39.08], ['202009', 41.97], ['202011', 43.57], ['202012', 43.97], ['202101', 42.07], ['202101', 42.07], ['202101', 42.07], ['202101', 27.73], ['202102', 27.73], ['202104', 43.03], ['202107', 46.85], ['202107', 47.71]]
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2018 2018
+32.42
+2018 2018
+32.42
+2018 2018
+32.42
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2019 2019
+37.35
+2020 2020
+36.77
+2020 2020
+36.77
+2020 2020
+36.77
+2020 2020
+36.77
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+2021 2021
+39.64
+   성별  나이  학력코드  취업  직업코드    소득구간코드
+0   0  35     1   0     3  80000000
+[27445388.]
+서울특별시 강남구 논현로2길 61-4 뉴현대파크빌
+서울특별시 강남구 개포로109길 9 성원대치2단지아파트
+서울특별시 강남구 삼성로135길 28 골든아트빌
+   성별  나이  학력코드  취업  직업코드    소득구간코드
+0   0  35     1   0     3  80000000
+[27445388.]
+서울특별시 강남구 논현로2길 61-4 뉴현대파크빌
+서울특별시 강남구 개포로109길 9 성원대치2단지아파트
+서울특별시 강남구 삼성로135길 28 골든아트빌
+   성별  나이  학력코드  취업  직업코드    소득구간코드
+0   0  35     1   0     3  80000000
+[27445388.]
+서울특별시 강남구 논현로2길 61-4 뉴현대파크빌
+서울특별시 강남구 개포로109길 9 성원대치2단지아파트
+서울특별시 강남구 삼성로135길 28 골든아트빌
+아파트이름: 서울특별시 강남구 언주로 103 개포2차현대아파트(220)
+77.75
+[['201603', 16.59], ['201604', 15.71], ['201605', 17.01], ['201605', 16.7], ['201612', 17.7], ['201703', 17.13], ['201704', 18.2], ['201707', 19.25], ['201906', 27.92], ['201911', 33.21], ['202006', 29.88], ['202104', 33.28]]
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2016 2016
+23.75
+2017 2017
+27.28
+2017 2017
+27.28
+2017 2017
+27.28
+2019 2019
+37.35
+2019 2019
+37.35
+2020 2020
+36.77
+2021 2021
+39.64
+   성별  나이  학력코드  취업  직업코드    소득구간코드
+0   0  30     3   1     6  60000000
+[26729864.]
+서울특별시 강남구 강남대로84길 33 대우디오빌플러스
+서울특별시 강남구 학동로81길 9 라테라스청담
+서울특별시 강남구 개포로109길 9 성원대치2단지아파트172.17.0.1 - - [02/Feb/2023 03:15:26] "[37mPOST /contact HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:15:37] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:15:52] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 03:16:11] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:24] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:24] "[37mGET /static/js/demo/data.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:24] "[37mGET /static/vendor/aos/aos.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:24] "[37mGET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/vendor/php-email-form/validate.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/js/main.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/vendor/aos/aos.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/img/hero-img.svg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/img/minji.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/img/young.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/img/hj.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/img/kang.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:25] "[37mGET /static/img/Oh.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:27] "[37mGET /static/img/testimonials-bg.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:27] "[37mGET /static/img/hero-bg.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:27] "[37mGET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:05:28] "[37mGET /static/img/favicon.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:18:13] "[35m[1mPOST /contactAPT HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/workspace/Fin_AI_project/application.py", line 121, in contactAPT
+    apt_pir_data, avg_pir_data, apt_price = cal_apt_pir( apt_addr )
+  File "/workspace/Fin_AI_project/cal_pir.py", line 40, in cal_apt_pir
+    return apt_list, avg_pir , apt_price_result
+UnboundLocalError: local variable 'apt_price_result' referenced before assignment
+172.17.0.1 - - [02/Feb/2023 04:18:13] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:18:13] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:18:13] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:18:13] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:18:13] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:18:13] "[37mGET /contactAPT?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:18:28] "[37mPOST /contactAPT HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:18:28] "[37mGET /static/vendor/chart.js/Chart.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:18:28] "[37mGET /static/img/page-header.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:18:28] "[37mGET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:18:28] "[37mGET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:19:20] "[37mGET /quote HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:19:20] "[37mGET /static/js/demo/data2.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:19:21] "[37mGET /static/img/user.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:20:34] "[35m[1mPOST /contact HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/workspace/Fin_AI_project/application.py", line 72, in contact
+    apt_pir_data, avg_pir_data, apt_price = cal_apt_pir( apt['apt_city'] + " " + apt['apt_addr'] , float(apt['apt_size']))
+  File "/workspace/Fin_AI_project/cal_pir.py", line 40, in cal_apt_pir
+    return apt_list, avg_pir , apt_price_result
+UnboundLocalError: local variable 'apt_price_result' referenced before assignment
+172.17.0.1 - - [02/Feb/2023 04:20:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:20:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:20:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:20:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:20:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:20:34] "[37mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:27:21] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/js/demo/data.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/aos/aos.css HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/aos/aos.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/img/hero-bg.png HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:22] "[36mGET /static/img/hero-img.svg HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:23] "[36mGET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:23] "[36mGET /static/img/minji.jpeg HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:23] "[36mGET /static/img/young.png HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:23] "[36mGET /static/img/kang.jpg HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:23] "[36mGET /static/img/Oh.jpg HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:23] "[36mGET /static/img/hj.jpg HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:23] "[36mGET /static/img/testimonials-bg.jpg HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:26] "[37mGET /service HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:27:27] "[36mGET /static/img/youtube.jpeg HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:27] "[36mGET /static/img/page-header.jpg HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:34] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:27:36] "[37mGET /model HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 04:27:37] "[36mGET /static/img/team/model1.png HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:37] "[36mGET /static/img/team/model3.png HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 04:27:37] "[36mGET /static/img/team/model2.png HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 06:36:08] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/workspace/Fin_AI_project/application.py", line 49, in contact
+    user['name'] = request.form['name']
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'name'
+172.17.0.1 - - [02/Feb/2023 06:36:08] "[37mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 06:36:08] "[37mGET /contact?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 06:36:08] "[37mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 06:36:08] "[37mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 06:36:08] "[37mGET /contact?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 06:36:13] "[37mGET /model HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 06:36:18] "[37mGET /service HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 06:36:22] "[37mGET /DSR HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 06:36:25] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:42] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:43] "[37mGET /static/js/demo/data.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:43] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:43] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:43] "[37mGET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:43] "[37mGET /static/vendor/aos/aos.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:43] "[37mGET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:43] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:43] "[36mGET /static/vendor/purecounter/purecounter_vanilla.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[36mGET /static/img/hero-img.svg HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[37mGET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[37mGET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[36mGET /static/vendor/php-email-form/validate.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[36mGET /static/vendor/aos/aos.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[37mGET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[37mGET /static/img/hero-bg.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[37mGET /static/img/minji.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[37mGET /static/img/hj.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[37mGET /static/img/young.png HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[37mGET /static/img/kang.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[37mGET /static/img/Oh.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:00:44] "[37mGET /static/img/testimonials-bg.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:04:43] "[37mGET /quote HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:04:43] "[36mGET /static/js/demo/data2.js HTTP/1.1[0m" 304 -
+172.17.0.1 - - [02/Feb/2023 07:04:44] "[37mGET /static/img/user.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:04:44] "[37mGET /static/img/page-header.jpg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:14:59] "[37mPOST /contact HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:15:00] "[37mGET /static/vendor/chart.js/Chart.min.js HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:15:01] "[37mGET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:15:41] "[37mGET /DSR HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:16:12] "[37mPOST /DSR2 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:21:53] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:22:43] "[37mGET /service HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:22:44] "[37mGET /static/img/youtube.jpeg HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:24:29] "[37mGET / HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Feb/2023 07:31:25] "[37mGET /DSR HTTP/1.1[0m" 200 -

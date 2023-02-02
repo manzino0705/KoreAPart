@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KoreAPart</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+    
+  <!-- 자동완성   -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="/static/js/demo/data2.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/main.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Logis - v1.3.0
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+ <script>
+	$(function () {	//화면 로딩후 시작
+		$("#cityInput").autocomplete({  //오토 컴플릿트 시작
+			source: city,	// source는 data.js파일 내부의 List 배열
+			focus : function(event, ui) { // 방향키로 자동완성단어 선택 가능하게 만들어줌	
+				return false;
+			},
+			minLength: 1,// 최소 글자수
+			delay: 100,	//autocomplete 딜레이 시간(ms)
+			//disabled: true, //자동완성 기능 끄기
+		});
+	});
+ </script> 
+
+  <script>
+	$(function () {	//화면 로딩후 시작
+		$("#aptInput").autocomplete({  //오토 컴플릿트 시작
+			source: apt,	// source는 data.js파일 내부의 List 배열
+			focus : function(event, ui) { // 방향키로 자동완성단어 선택 가능하게 만들어줌	
+				return false;
+			},
+			minLength: 1,// 최소 글자수
+			delay: 100,	//autocomplete 딜레이 시간(ms)
+			//disabled: true, //자동완성 기능 끄기
+		});
+	});
+  </script> 
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="static/img/logo.png" alt=""> -->
+        <h1>KoreAPart</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="/service">Q&amp;A</a></li>
+              <li><a href="/model">AI 모델 보기</a></li>
+              <li><a href="/DSR">DSR 계산하기</a></li>
+              <li><a href="http://reitskorea.co.kr">Reits 정보 확인하기</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact">Buy Apart</a></li>
+          <li><a class="get-a-quote" href="/quote">직접 계산해보기</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('static/img/page-header.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>My Page</h2>
+              <p>원하는 아파트를 구매하기 위한 기본 정보를 입력합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li>My Page</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Get a Quote Section ======= -->
+    <section id="get-a-quote" class="get-a-quote">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row g-0">
+
+          <div class="col-lg-5 quote-bg" style="background-image: url(static/img/user.jpeg);"></div>
+
+          <div class="col-lg-7">
+            <!-- <form action="/contact" id="test" method="POST" class="php-email-form"> -->
+            <form action="/contact" id="test" method="POST" class='form-control'>
+              <h4>Apart Details</h4>
+              <p> </p>
+              <!-- <p>구하려는 아파트의 주소와 이름을 입력하세요.</p> -->
+               
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="apt-city" class="form-control" placeholder="OO시 XX구" list="cityOptions" required>
+                
+                    <datalist id="cityOptions">
+                          <option value="서울특별시 강남구">
+                    </datalist>
+                        
+                </div>
+
+                <div class="col-md-6">
+                  <input id="cityInput" type="text" name="apt-addr" class="form-control" placeholder="상세주소" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input id="aptInput" type="text" name="apt-name" class="form-control" placeholder="아파트 이름" required>
+                </div>
+                  
+                <div class="col-md-6">
+                  <input type="text" name="apt-size" class="form-control" placeholder="전용면적(㎡)" required>
+                </div>
+
+                <!-- <div class="col-md-6">
+                  <input type="text" name="dimensions" class="form-control" placeholder="Dimensions (cm)" required>
+                </div> -->
+
+                <p> </p>
+                <div class="col-lg-12">
+                  <h4>Your Personal Details</h4>
+                </div>
+                <!-- # name gender age grade employ car income -->
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="name" placeholder="이름" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="gender" placeholder="성별" list="genderOptions" required>
+                    <datalist id="genderOptions">
+                          <option value="남">
+                          <option value="여">
+                    </datalist>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="age" placeholder="나이" required>
+                </div>
+                  
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="grade" placeholder="학력" list='gradeOptions' required>
+                    <datalist id="gradeOptions">
+                          <option value="무학">
+                          <option value="초등학교 졸업">
+                          <option value="중학교 졸업">
+                          <option value="고등학교 졸업">
+                          <option value="대학교 2년제 졸업">
+                          <option value="대학교 4년제 졸업">
+                          <option value="석사">
+                          <option value="박사">
+                    </datalist>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="employ" placeholder="취업여부" list="employOptions" required>
+                    <datalist id="employOptions">
+                          <option value="O">
+                          <option value="X">
+                    </datalist>
+                </div>
+                
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="job" placeholder="직업군" list="jobOptions" required>
+                    <datalist id="jobOptions">
+                          <option value="관리자">
+                          <option value="전문가">
+                          <option value="사무직">
+                          <option value="서비스직">
+                          <option value="판매직">
+                          <option value="농업">
+                          <option value="기술자">
+                          <option value="기계조립">
+                          <option value="단순노동">
+                    </datalist>
+                </div>
+                
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="income" placeholder="연봉(만원)" required>
+                    
+                </div>  
+                  
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="asset" placeholder="현재 저축 금액(만원)" required>
+                </div>
+                  
+                  
+                <input type="hidden" name="checkHidden" id="checkHidden" value='Y'>
+            
+
+                <div class="col-md-12 text-center">
+                  <input type="submit" class="btn btn-primary" name="price" value="예상 기간 계산하기" /> 
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Quote Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Get a Quote Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>KoreAPart</span>
+          </a>
+            <br>
+            <p>내 연봉으로 내가 원하는 집을 언제 살 수 있을까? 
+            <br> KoreAPart를 통해 내가 원하는 서을 아파트 구매 정보를 한 눈에 확인하고,
+            <br>내 집 마련 하는 그날까지 KoreAPart와 함께해요 ! </p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/p/Cn3xdX3PUEY/?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-4 footer-links">
+          <h4> </h4>
+          <ul>
+            <!-- <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-8 footer-links">
+          <h4>Contact Us</h4>
+          <ul>
+          <p>
+            서울특별시 영등포구 의사당대로<br>
+            88, 한국투자증권 본사<br>
+            자양 연구실 <br><br>
+          </p>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4> </h4>
+          <ul>
+          <p><br>
+            <strong>Phone:</strong> 02-3276-5000<br>
+            <strong>Email:</strong> DongGi-Salang@naver.com<br>
+          </p>
+            </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">MinZi.KIM</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+  <script>
+     $(function() {
+        console.log("페이지로딩")
+      if ($('#customCheck').prop(":checked")) {
+            $('#checkHidden').val('Y');
+        } 
+      else {
+            $('#checkHidden').val('N');
+        }
+      console.log(checkHidden) 
+         });
+  </script>
+
+</body>
+
+</html>
